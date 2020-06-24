@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Item from "./ItemFactura";
 
 export default function FormFactura() {
   const [cantidadItems, setCantidadItems] = useState([1]);
 
   const handleAgregarItem = () => {
     const val = cantidadItems[cantidadItems.length - 1];
-    setCantidadItems(cantidadItems.concat(val + 1), console.log(cantidadItems));
+    setCantidadItems(cantidadItems.concat(val + 1));
   };
 
   return (
@@ -20,14 +21,10 @@ export default function FormFactura() {
           <p>Rubro #1</p> <input placeholder="completar"></input>
           <button>Agregar Rubro</button>
         </div>
-        <div>
-          <p>item</p> <input placeholder="completar"></input>
-          <p>Descripcion</p> <input placeholder="completar"></input>
-          <p>Cantidad</p> <input placeholder="completar"></input>
-          <p>monto</p> <input placeholder="completar"></input>
-        </div>
-        <button onClick={() => handleAgregarItem()}>Agregar Item</button>
+        <Item cantidadItems={cantidadItems} />
       </div>
+
+      <button onClick={() => handleAgregarItem()}>Agregar Item</button>
 
       <Link to={"./AgregarFacturas"}>
         <button variant="raised">Agregar Facturas</button>
