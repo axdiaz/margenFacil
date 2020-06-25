@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Item from "./ItemFactura";
+import dibujoForm from "./dibujoFactura.jpg"
+import './style.css'
 
 export default function FormFactura() {
   const [cantidadItems, setCantidadItems] = useState([1]);
@@ -16,10 +18,26 @@ export default function FormFactura() {
       <p>Complete los datos</p>
       <div>
         <div>
-          <p>Nro de Factura</p> <input placeholder="completar"></input>
-          <p>Fecha</p> <input placeholder="completar"></input>
-          <p>Rubro #1</p> <input placeholder="completar"></input>
-          <button>Agregar Rubro</button>
+          <label>
+            Nro de Factura
+            <input placeholder="completar"></input>
+          </label>
+          <label>
+            Fecha
+            <input placeholder="completar"></input>
+          </label>
+          <label>
+            tipo:
+            <select>
+              <option value="Ingreso">Ingreso</option>
+              <option value="Egreso">Egreso</option>
+            </select>
+          </label>
+          <label>
+            Rubro #1
+            <input placeholder="completar"></input>
+            <button>Agregar Rubro</button>
+          </label>
         </div>
         <Item cantidadItems={cantidadItems} />
       </div>
@@ -29,6 +47,9 @@ export default function FormFactura() {
       <Link to={"./AgregarFacturas"}>
         <button variant="raised">Agregar Facturas</button>
       </Link>
+
+      <img src={dibujoForm} alt="imagen de factura" className="dibujo-factura"/>
+
     </div>
   );
 }

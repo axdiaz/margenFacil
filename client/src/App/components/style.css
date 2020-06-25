@@ -1,0 +1,10 @@
+.item-factura {
+  background-color: red;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dibujo-factura {
+  width: 300px;
+}
