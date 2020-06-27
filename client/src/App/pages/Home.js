@@ -1,28 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Button from '@material-ui/core/Button'
+import Button from "@material-ui/core/Button";
 
-export default class Home extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Margen Fácil</h1>
-        <Link to={"./facturas"}>
-          <Button variant="raised">hola</Button>
-        </Link>
-        <Link to={"./enDesarollo"}>
-          <Button variant="raised">Rubros</Button>
-        </Link>
-        <Link to={"./enDesarollo"}>
-          <Button variant="raised">Stocks</Button>
-        </Link>
-        <Link to={"./crearMargen"}>
-          <Button variant="raised">Crear Margen</Button>
-        </Link>
-        <Link to={"./enDesarollo"}>
-          <Button variant="raised">Salir</Button>
-        </Link>
-      </div>
-    );
-  }
+export default function Home() {
+  return (
+    <div className="App">
+      <h1>Margen Fácil</h1>
+      <Link to={"./facturas"}>
+        <Button>hola</Button>
+      </Link>
+      <Link to={"./enDesarollo"}>
+        <Button>Rubros</Button>
+      </Link>
+      <Link to={"./enDesarollo"}>
+        <Button>Stocks</Button>
+      </Link>
+      <Link to={"./crearMargen"}>
+        <Button>Crear Margen</Button>
+      </Link>
+      <Link to={"./enDesarollo"}>
+        <Button>Salir</Button>
+      </Link>
+    </div>
+  );
 }

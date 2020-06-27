@@ -1,27 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Button from '@material-ui/core/Button'
+import Button from "@material-ui/core/Button";
 
-export default class CrearMargen extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Creando Margen</h1>
+export default function CrearMargen() {
+  return (
+    <div className="App">
+      <h1>Creando Margen</h1>
 
-        <p>Complete los campos para crear el margen</p>
+      <p>Complete los campos para crear el margen</p>
 
-        <Link to={"./"}>
-          <Button variant="raised">Crear Margen</Button>
-        </Link>
+      <Link to={"./"}>
+        <Button>Crear Margen</Button>
+      </Link>
 
-        <Link to={"./"}>
-          <Button variant="raised">Enviar Por Mail</Button>
-        </Link>
+      <Link to={"./"}>
+        <Button>Enviar Por Mail</Button>
+      </Link>
 
-        <Link to={"../"}>
-          <Button variant="raised">Home</Button>
-        </Link>
-      </div>
-    );
-  }
+      <Link to={"../"}>
+        <Button>Home</Button>
+      </Link>
+    </div>
+  );
 }

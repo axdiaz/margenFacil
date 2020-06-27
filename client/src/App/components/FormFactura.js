@@ -46,7 +46,7 @@ export default function FormFactura() {
       <Button onClick={() => handleAgregarItem()}>Agregar Item</Button>
 
       <Link to={"./AgregarFacturas"}>
-        <Button variant="raised">Agregar Facturas</Button>
+        <Button>Agregar Facturas</Button>
       </Link>
 
       <img src={dibujoForm} alt="imagen de factura" className="dibujo-factura"/>
