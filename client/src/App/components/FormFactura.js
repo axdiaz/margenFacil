@@ -45,7 +45,7 @@ export default function FormFactura() {
 
       <Button onClick={() => handleAgregarItem()}>Agregar Item</Button>
 
-      <Link to={"./AgregarFacturas"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Agregar Facturas</Button>
       </Link>
 

@@ -17,7 +17,7 @@ export default class App extends Component {
           <Route path="/facturas" component={Facturas} />
           <Route path="/agregarFacturas" component={AgregarFacturas} />
           <Route path="/crearMargen" component={CrearMargen} />
-          <Route path="/enDesarollo" component={EnDesarrollo} />
+          <Route path="/enDesarrollo" component={EnDesarrollo} />
         </Switch>
       </div>
     );

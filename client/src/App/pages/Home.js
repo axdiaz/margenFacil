@@ -7,18 +7,18 @@ export default function Home() {
     <div className="App">
       <h1>Margen Fácil</h1>
       <Link to={"./facturas"}>
-        <Button>hola</Button>
+        <Button>Facturas</Button>
       </Link>
-      <Link to={"./enDesarollo"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Rubros</Button>
       </Link>
-      <Link to={"./enDesarollo"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Stocks</Button>
       </Link>
       <Link to={"./crearMargen"}>
         <Button>Crear Margen</Button>
       </Link>
-      <Link to={"./enDesarollo"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Salir</Button>
       </Link>
     </div>

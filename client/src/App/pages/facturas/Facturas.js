@@ -9,16 +9,16 @@ export default function Facturas() {
       <Link to={"./agregarFacturas"}>
         <Button>Agregar Factura</Button>
       </Link>
-      <Link to={"./list"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Buscar Factura</Button>
       </Link>
-      <Link to={"./list"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Eliminar Factura</Button>
       </Link>
-      <Link to={"./list"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Modificar Factura</Button>
       </Link>
-      <Link to={"./list"}>
+      <Link to={"./enDesarrollo"}>
         <Button>Listar Facturas</Button>
       </Link>
       <Link to={"../"}>
