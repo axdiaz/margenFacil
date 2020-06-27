@@ -22,11 +22,12 @@ export default function ItemFactura({ cantidadItems }) {
       <FormSpanningTable/>
     </div>
 
-      // <label>Item</label>
-      // <label>Descripcion</label>
-      // <label>Cantidad</label>
-      // <label>Monto</label>
-      // <div>{listItems}</div>;
+    {/*  <label>Item</label>
+      <label>Descripcion</label>
+      <label>Cantidad</label>
+      <label>Monto</label>
+      <div>{listItems}</div>;
+        */}
     </>
   );
 }
