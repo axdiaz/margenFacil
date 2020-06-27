@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Factura from "../../components/FormFactura";
+import Button from '@material-ui/core/Button'
 
 export default function AgregarFacturas() {
   return (
@@ -10,7 +11,7 @@ export default function AgregarFacturas() {
       <Factura />
 
       <Link to={"../"}>
-        <button variant="raised">Home</button>
+        <Button variant="raised">Home</Button>
       </Link>
     </div>
   );
