@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import FormSpanningTable from './FormSpanningTable'
+
 
 export default function ItemFactura({ cantidadItems }) {
   const listItems = cantidadItems.map(item => (
@@ -16,11 +18,15 @@ export default function ItemFactura({ cantidadItems }) {
 
   return (
     <>
-      <label>Item</label>
-      <label>Descripcion</label>
-      <label>Cantidad</label>
-      <label>Monto</label>
-      <div>{listItems}</div>;
+    <div>
+      <FormSpanningTable/>
+    </div>
+
+      // <label>Item</label>
+      // <label>Descripcion</label>
+      // <label>Cantidad</label>
+      // <label>Monto</label>
+      // <div>{listItems}</div>;
     </>
   );
 }
