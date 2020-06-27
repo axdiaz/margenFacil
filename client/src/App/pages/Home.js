@@ -10,16 +10,16 @@ export default class Home extends Component {
         <Link to={"./facturas"}>
           <Button variant="raised">hola</Button>
         </Link>
-        <Link to={"./list"}>
+        <Link to={"./enDesarollo"}>
           <Button variant="raised">Rubros</Button>
         </Link>
-        <Link to={"./list"}>
+        <Link to={"./enDesarollo"}>
           <Button variant="raised">Stocks</Button>
         </Link>
         <Link to={"./crearMargen"}>
           <Button variant="raised">Crear Margen</Button>
         </Link>
-        <Link to={"./list"}>
+        <Link to={"./enDesarollo"}>
           <Button variant="raised">Salir</Button>
         </Link>
       </div>

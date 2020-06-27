@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Item from "./ItemFactura";
 import dibujoForm from "./dibujoFactura.jpg"
 import './style.css'
+import Button from '@material-ui/core/Button'
 
 export default function FormFactura() {
   const [cantidadItems, setCantidadItems] = useState([1]);
@@ -36,16 +37,16 @@ export default function FormFactura() {
           <label>
             Rubro #1
             <input placeholder="completar"></input>
-            <button>Agregar Rubro</button>
+            <Button>Agregar Rubro</Button>
           </label>
         </div>
         <Item cantidadItems={cantidadItems} />
       </div>
 
-      <button onClick={() => handleAgregarItem()}>Agregar Item</button>
+      <Button onClick={() => handleAgregarItem()}>Agregar Item</Button>
 
       <Link to={"./AgregarFacturas"}>
-        <button variant="raised">Agregar Facturas</button>
+        <Button variant="raised">Agregar Facturas</Button>
       </Link>
 
       <img src={dibujoForm} alt="imagen de factura" className="dibujo-factura"/>
