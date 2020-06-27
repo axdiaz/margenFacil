@@ -4,25 +4,23 @@ import "./style.css";
 export default function ItemFactura({ cantidadItems }) {
   const listItems = cantidadItems.map(item => (
     <div key={item} className="item-factura">
-      <label>
-        Item
-        <input placeholder="completar"></input>
-      </label>
-      <label>
-        Descripcion
-        <input placeholder="completar"></input>
-      </label>
+      <input placeholder="completar"></input>
 
-      <label>
-        Cantidad
-        <input placeholder="completar"></input>
-      </label>
-      <label>
-        Monto
-        <input placeholder="completar"></input>
-      </label>
+      <input placeholder="completar"></input>
+
+      <input placeholder="completar"></input>
+
+      <input placeholder="completar"></input>
     </div>
   ));
 
-  return <div>{listItems}</div>;
+  return (
+    <>
+      <label>Item</label>
+      <label>Descripcion</label>
+      <label>Cantidad</label>
+      <label>Monto</label>
+      <div>{listItems}</div>;
+    </>
+  );
 }

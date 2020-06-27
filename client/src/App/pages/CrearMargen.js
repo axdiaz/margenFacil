@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Button from '@material-ui/core/Button'
 
 export default class CrearMargen extends Component {
   render() {
@@ -10,15 +11,15 @@ export default class CrearMargen extends Component {
         <p>Complete los campos para crear el margen</p>
 
         <Link to={"./"}>
-          <button variant="raised">Crear Margen</button>
+          <Button variant="raised">Crear Margen</Button>
         </Link>
 
         <Link to={"./"}>
-          <button variant="raised">Enviar Por Mail</button>
+          <Button variant="raised">Enviar Por Mail</Button>
         </Link>
 
         <Link to={"../"}>
-          <button variant="raised">Home</button>
+          <Button variant="raised">Home</Button>
         </Link>
       </div>
     );

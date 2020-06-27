@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Button from '@material-ui/core/Button'
 
 export default class Home extends Component {
   render() {
@@ -7,19 +8,19 @@ export default class Home extends Component {
       <div className="App">
         <h1>Margen Fácil</h1>
         <Link to={"./facturas"}>
-          <button variant="raised">Facturas</button>
+          <Button variant="raised">hola</Button>
         </Link>
         <Link to={"./list"}>
-          <button variant="raised">Rubros</button>
+          <Button variant="raised">Rubros</Button>
         </Link>
         <Link to={"./list"}>
-          <button variant="raised">Stocks</button>
+          <Button variant="raised">Stocks</Button>
         </Link>
         <Link to={"./crearMargen"}>
-          <button variant="raised">Crear Margen</button>
+          <Button variant="raised">Crear Margen</Button>
         </Link>
         <Link to={"./list"}>
-          <button variant="raised">Salir</button>
+          <Button variant="raised">Salir</Button>
         </Link>
       </div>
     );
