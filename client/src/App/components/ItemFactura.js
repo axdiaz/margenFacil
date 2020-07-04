@@ -1,33 +1,19 @@
 import React from "react";
 import "./style.css";
-import FormSpanningTable from './FormSpanningTable'
-
+import { FriendList } from "./formicPrueba";
+import CustomForm from "./CustomForm";
 
 export default function ItemFactura({ cantidadItems }) {
-  const listItems = cantidadItems.map(item => (
-    <div key={item} className="item-factura">
-      <input placeholder="completar"></input>
-
-      <input placeholder="completar"></input>
-
-      <input placeholder="completar"></input>
-
-      <input placeholder="completar"></input>
-    </div>
-  ));
-
   return (
     <>
-    <div>
-      <FormSpanningTable/>
-    </div>
+      <div>
+        <h1>-----------------------------------------</h1>
+        <h1>componente final</h1>
+        <CustomForm />
+        <h1>-----------------------------------------</h1>
 
-    {/*  <label>Item</label>
-      <label>Descripcion</label>
-      <label>Cantidad</label>
-      <label>Monto</label>
-      <div>{listItems}</div>;
-        */}
+ {/* <FriendList /> */}
+      </div>
     </>
   );
 }
