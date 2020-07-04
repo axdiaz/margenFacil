@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Item from "./ItemFactura";
-import dibujoForm from "./dibujoFactura.jpg"
-import './style.css'
-import Button from '@material-ui/core/Button'
+import dibujoForm from "./dibujoFactura.jpg";
+import FormularioItems from "./customForm";
+import "./style.css";
+import Button from "@material-ui/core/Button";
 
 export default function FormFactura() {
   const [cantidadItems, setCantidadItems] = useState([1]);
@@ -40,17 +40,19 @@ export default function FormFactura() {
             <Button>Agregar Rubro</Button>
           </label>
         </div>
-        <Item cantidadItems={cantidadItems} />
       </div>
-
+      <FormularioItems></FormularioItems>
       <Button onClick={() => handleAgregarItem()}>Agregar Item</Button>
 
       <Link to={"./enDesarrollo"}>
         <Button>Agregar Facturas</Button>
       </Link>
 
-      <img src={dibujoForm} alt="imagen de factura" className="dibujo-factura"/>
-
+      <img
+        src={dibujoForm}
+        alt="imagen de factura"
+        className="dibujo-factura"
+      />
     </div>
   );
 }
